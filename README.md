@@ -23,6 +23,8 @@ Provides market price information used to calculate portfolio value, P&L, and pe
 ## Stock Screening & Selection
 Screens securities based on selected criteria to support stock analysis and selection.
 <img width="1366" height="504" alt="Screenshot (7)" src="https://github.com/user-attachments/assets/43e820ec-663c-4ee4-94c8-fb4eb28199f4" />
+## Link to Excel Model
+[Stock_Analyst_Excel_Model.xlsx](https://github.com/user-attachments/files/31704987/Stock_Analyst_Excel_Model.xlsx)
 # Stakeholders & Potential Applications
 The model is designed around different stakeholder information needs and can be adapted to portfolio monitoring, investment reporting, and financial analysis use cases.
 <img width="1294" height="579" alt="Screenshot (11)" src="https://github.com/user-attachments/assets/33030f4d-ab58-449d-bb69-45f6e6438b31" />
