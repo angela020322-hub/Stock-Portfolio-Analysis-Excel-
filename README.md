@@ -49,4 +49,4 @@ Provides an interactive security-level analysis tool that allows users to search
 8) **Sector Weight (%) Diagram** — Provides a visual representation of sector diversification.
 9) **Real-Time Price Summary** — Displays the latest/reference market price and related information for the selected ticker.
 10) **Real-Time Price Chart** — Visualizes the selected ticker's market price information.
-11） **Real-Time Price Diagram** — Provides an additional visual representation of the selected security's current market price.
+11) **Real-Time Price Diagram** — Provides an additional visual representation of the selected security's current market price.
