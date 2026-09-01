@@ -1,7 +1,7 @@
 # Stock-Portfolio-Analysis-Excel
 Portfolio information may be distributed across transaction records, market prices, holdings, and company-level data, making it difficult to obtain a consistent view of portfolio performance and risk.
 # Overview
-This project is an Excel-based Stock Portfolio Analysis Model that transforms transaction and market data into actionable portfolio information, including holdings, cost basis, market value, realized and unrealized P&L, performance, sector allocation, risk metrics, and dashboard reporting.
+Portfolio information may be distributed across transaction records,  market prices, holdings, and company-level data, making it difficult  to obtain a consistent view of portfolio performance and risk.  This project is an Excel-based Stock Portfolio Analysis Model that  transforms transaction and market data into portfolio holdings,  cost basis, P&L, performance, allocation, and risk metrics.  The project follows an analyst-oriented workflow: defining business  questions, structuring data requirements, building analytical logic,  calculating KPIs, and communicating findings through dashboards.  
 # Project Scope/ Analytical Coverage
 The project covers the following areas:
 1) **Transaction Tracking** — Records buy and sell activities, including transaction dates, quantities, prices, and transaction values.
