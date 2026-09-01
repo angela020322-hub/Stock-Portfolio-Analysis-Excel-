@@ -13,3 +13,6 @@ The project covers the following areas:
 7) **Risk Analysis** — Evaluates selected portfolio risk metrics, concentration, and exposure.
 8) **Dashboard Reporting** — Consolidates key portfolio KPIs and analytical results into an interactive dashboard.
 9) **Excel Automation** — Uses Excel formulas, PivotTables, and VBA to automate calculations and repetitive reporting tasks.
+# Project Results
+## Transaction & Portfolio Activity
+Tracks buy and sell transactions and provides the underlying activity used for portfolio analysis.
