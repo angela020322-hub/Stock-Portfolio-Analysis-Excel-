@@ -26,3 +26,27 @@ Screens securities based on selected criteria to support stock analysis and sele
 # Stakeholders & Potential Applications
 The model is designed around different stakeholder information needs and can be adapted to portfolio monitoring, investment reporting, and financial analysis use cases.
 <img width="1294" height="579" alt="Screenshot (11)" src="https://github.com/user-attachments/assets/33030f4d-ab58-449d-bb69-45f6e6438b31" />
+# Workbook Overview
+The workbook is organized into three main worksheets, moving from transaction-level portfolio information to market data and interactive security-level analysis.
+## Transaction History
+Provides a historical view of portfolio transactions and summarizes investment activity and portfolio diversification.
+1）**Transaction History Chart** — Visualizes historical buying and selling activity over time.
+2）**Investment Summary** — Summarizes key investment information and portfolio-level metrics.
+3) **Investment Diversity Chart** — Shows how investments are distributed across different securities.
+4) **Investment Diversity Diagram** — Provides a visual representation of portfolio diversification.
+## Real Time Market Price
+Provides the latest available market price for each ticker currently included in the portfolio.
+1) **Real-Time Price by Ticker** — Displays the current/reference market price for each portfolio security and provides the price inputs used for portfolio valuation and gain/loss analysis.
+## Search Engine
+Provides an interactive security-level analysis tool that allows users to search for a specific ticker and review its portfolio position, purchase history, performance, allocation, and market information.
+1) **Search Area** — Allows users to select or enter a ticker for detailed analysis.
+2) **Stock Summary** — Summarizes key information and current portfolio metrics for the selected security.
+3) **Purchase History** — Displays the historical purchase activity for the selected ticker.
+4) **Current Gain & Loss Chart** — Visualizes the current gain or loss associated with the selected security.
+5) **Portfolio Weight (%) Chart** — Shows the selected security's percentage of total portfolio value.
+6) **Portfolio Weight (%) Diagram** — Provides a visual representation of the selected security's contribution to the overall portfolio.
+7) **Sector Weight (%) Chart** — Shows portfolio exposure by sector.
+8) **Sector Weight (%) Diagram** — Provides a visual representation of sector diversification.
+9) **Real-Time Price Summary** — Displays the latest/reference market price and related information for the selected ticker.
+10) **Real-Time Price Chart** — Visualizes the selected ticker's market price information.
+11) Real-Time Price Diagram — Provides an additional visual representation of the selected security's current market price.
