@@ -32,8 +32,8 @@ The model is designed around different stakeholder information needs and can be 
 The workbook is organized into three main worksheets, moving from transaction-level portfolio information to market data and interactive security-level analysis.
 ## Transaction History
 Provides a historical view of portfolio transactions and summarizes investment activity and portfolio diversification.
-1）**Transaction History Chart** — Visualizes historical buying and selling activity over time.
-2）**Investment Summary** — Summarizes key investment information and portfolio-level metrics.
+1) **Transaction History Chart** — Visualizes historical buying and selling activity over time.
+2) **Investment Summary** — Summarizes key investment information and portfolio-level metrics.
 3) **Investment Diversity Chart** — Shows how investments are distributed across different securities.
 4) **Investment Diversity Diagram** — Provides a visual representation of portfolio diversification.
 ## Real Time Market Price
