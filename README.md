@@ -16,3 +16,10 @@ The project covers the following areas:
 # Project Results
 ## Transaction & Portfolio Activity
 Tracks buy and sell transactions and provides the underlying activity used for portfolio analysis.
+<img width="1362" height="509" alt="Screenshot (9)" src="https://github.com/user-attachments/assets/54714058-35b1-48f7-b7a9-fa033aaa9e50" />
+## Market Data & Price Monitoring
+Provides market price information used to calculate portfolio value, P&L, and performance.
+<img width="1366" height="403" alt="Screenshot (8)" src="https://github.com/user-attachments/assets/945558e1-1da4-410b-8a74-6fcd89fd5584" />
+## Stock Screening & Selection
+Screens securities based on selected criteria to support stock analysis and selection.
+<img width="1366" height="504" alt="Screenshot (7)" src="https://github.com/user-attachments/assets/43e820ec-663c-4ee4-94c8-fb4eb28199f4" />
