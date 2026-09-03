@@ -7,6 +7,7 @@
 6. [Stakeholders & Potential Applications](#stakeholders--potential-applications)
 7. [Workbook Overview](#workbook-overview)
 8. [Vocabulary](#vocabulary)
+9. [Formulas & Functions](#formulas-&-functions)
 
 # Stock Portfolio Analysis (Excel)
 Portfolio information may be distributed across transaction records, market prices, holdings, and company-level data, making it difficult to obtain a consistent view of portfolio performance and risk.
@@ -201,3 +202,4 @@ Provides an interactive security-level analysis tool that allows users to search
 12) ***Crypto*** <br>
 **Definition:**
 **Example from Project:**
+# Formulas & Functions
