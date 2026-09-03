@@ -239,6 +239,4 @@ Provides an interactive security-level analysis tool that allows users to search
 23. **SUMIF** — Adds values that meet a specified condition.
 24. **MAXIFS** — Returns the largest value that meets one or more specified criteria.
 ## Function Logistics
-'''
-thus is me
-'''
+>thus is me
