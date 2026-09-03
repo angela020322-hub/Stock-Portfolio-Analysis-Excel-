@@ -52,7 +52,7 @@ Provides market price information used to calculate portfolio value, P&L, and pe
 Screens securities based on selected criteria to support stock analysis and selection.
 <img width="1366" height="504" alt="Screenshot (7)" src="https://github.com/user-attachments/assets/43e820ec-663c-4ee4-94c8-fb4eb28199f4" />
 ## Link to Excel Model
-[Stock_Analyst_Excel_Model.xlsx](https://github.com/user-attachments/files/31704987/Stock_Analyst_Excel_Model.xlsx)
+[Stock Analyst Excel Model.xlsx](https://github.com/user-attachments/files/31810486/Stock.Analyst.Excel.Model.xlsx)
 ## Link to Project PDF
 
 # Stakeholders & Potential Applications
