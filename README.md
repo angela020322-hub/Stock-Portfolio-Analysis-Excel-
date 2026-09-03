@@ -1,4 +1,13 @@
 # Table of Contents
+1. [Stock Portfolio Analysis (Excel)](#stock-portfolio-analysis-excel)
+2. [Data Disclaimer](#data-disclaimer)
+3. [Overview](#overview)
+4. [Project Scope / Analytical Coverage](#project-scope-analytical-coverage)
+5. [Project Results](#project-results)
+6. [Stakeholders & Potential Applications](#stakeholders--potential-applications)
+7. [Workbook Overview](#workbook-overview)
+8. [Vocabularies](#vocabularies)
+
 # Stock Portfolio Analysis (Excel)
 Portfolio information may be distributed across transaction records, market prices, holdings, and company-level data, making it difficult to obtain a consistent view of portfolio performance and risk.
 # Data Disclaimer
