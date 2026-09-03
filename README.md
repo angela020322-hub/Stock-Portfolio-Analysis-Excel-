@@ -72,26 +72,26 @@ Provides an interactive security-level analysis tool that allows users to search
 **Definition:** A unique symbol used to identify a publicly traded stock.<br>
 **Example from Project:** Used to identify and track the stock being transacted and to connect transaction, market-price, and stock-summary data.<br>
 2) ***Date***<br>
-**Definition:**
-**Example from Project:**
+**Definition:** The date on which a transaction occurs. <br>
+**Example from Project:** Used to record the timing of each Buy or Sell transaction and to calculate the holding period of a stock. <br>
 4) ***Shares***<br>
-**Definition:**
-**Example from Project:**
+**Definition:** The number of shares bought or sold in a transaction. <br>
+**Example from Project:** Used to calculate Total Cost, current shares owned, and Current Value based on the transaction history. <br>
 5) ***Unit Price*** <br>
-**Definition:**
-**Example from Project:**
+**Definition:** The price paid or received for one share in a transaction. <br>
+**Example from Project:** Used with Shares to calculate the Total Cost of each transaction and to determine the cost basis of holdings. <br>
 6) ***Total Cost*** <br>
-**Definition:**
-**Example from Project:**
+**Definition:** The total dollar amount associated with a transaction, calculated from the number of shares and the price per share.<br>
+**Example from Project:** Calculated as Shares × Unit Price and used to track the amount invested through transaction activity. <br>
 7) ***Buy*** <br>
-**Definition:**
-**Example from Project:**
+**Definition:** A transaction in which shares of a stock are purchased. <br>
+**Example from Project:** Increases the number of shares owned and adds the transaction cost to the Running Cost Basis. <br>
 8) ***Sell*** <br>
-**Definition:**
-**Example from Project:**
+**Definition:** A transaction in which shares of a stock are sold. <br>
+**Example from Project:** Decreases the number of shares owned and reduces the Running Cost Basis associated with the position. <br>
 9) ***Transaction*** <br>
-**Definition:**
-**Example from Project:**
+**Definition:** A recorded purchase or sale of a financial asset. <br>
+**Example from Project:** Each row in the Transaction History table represents one Buy or Sell transaction and provides the underlying data for portfolio calculations. <br>
 ## Portfolio Vocabulary
 1) ***Portfolio*** <br>
 **Definition:**
