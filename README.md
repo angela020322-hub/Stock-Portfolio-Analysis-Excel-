@@ -205,6 +205,9 @@ Provides an interactive security-level analysis tool that allows users to search
 12) ***Crypto*** <br>
 **Definition:** Digital assets that use blockchain technology, such as cryptocurrencies, rather than representing traditional equity sectors. <br>
 # Formulas & Functions
+
 ## Formulas
+
 <img width="1112" height="572" alt="Screenshot (12)" src="https://github.com/user-attachments/assets/38c92cd8-3608-44f6-b385-65708379a329" />
+
 ## Functions
