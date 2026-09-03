@@ -1,5 +1,8 @@
+# Table of Contents
 # Stock Portfolio Analysis (Excel)
 Portfolio information may be distributed across transaction records, market prices, holdings, and company-level data, making it difficult to obtain a consistent view of portfolio performance and risk.
+# Data Disclaimer
+All stock transaction data in this project are entirely illustrative and created solely for demonstration purposes. The transactions do not represent actual personal investments, trading activity, or brokerage records. They are used to demonstrate the analytical model, calculation logic, and Excel capabilities of the project.
 # Overview
 Portfolio information may be distributed across transaction records,  market prices, holdings, and company-level data, making it difficult  to obtain a consistent view of portfolio performance and risk.  This project is an Excel-based Stock Portfolio Analysis Model that  transforms transaction and market data into portfolio holdings,  cost basis, P&L, performance, allocation, and risk metrics.  The project follows an analyst-oriented workflow: defining business  questions, structuring data requirements, building analytical logic,  calculating KPIs, and communicating findings through dashboards.  
 # Project Scope/ Analytical Coverage
@@ -52,3 +55,38 @@ Provides an interactive security-level analysis tool that allows users to search
 9) **Real-Time Price Summary** — Displays the latest/reference market price and related information for the selected ticker.
 10) **Real-Time Price Chart** — Visualizes the selected ticker's market price information.
 11) **Real-Time Price Diagram** — Provides an additional visual representation of the selected security's current market price.
+# Vocabularies
+1) ***Ticker***<br>
+**Definition:** A unique symbol used to identify a publicly traded stock.<br>
+**Example from Project:** Used to identify and track the stock being transacted and to connect transaction, market-price, and stock-summary data.<br>
+2) ***Date***<br>
+3) ***Shares***<br>
+4) ***Unit Price*** <br>
+5) ***Total Cost*** <br>
+6) ***Buy*** <br>
+7) ***Sell*** <br>
+8) ***Sector*** <br>
+9) ***Industry*** <br>
+10) ***Information Technology*** <br>
+11) ***Communication Services*** <br>
+12) ***Financials*** <br>
+13) ***Consumer Discretionary***<br>
+14) ***Consumer Staples*** <br>
+15) ***Industrials*** <br>
+16) ***Energy*** <br>
+17) ***Utilities*** <br>
+18) ***Materials*** <br>
+19) ***Real Estate*** <br>
+20) ***Crypto*** <br>
+21) ***Running Cost Basis*** <br>
+22) ***Average Price*** <br>
+23) ***Total Invested*** <br>
+24) ***Current Price/Market Price*** <br>
+25) ***Current Value*** <br>
+26) ***Current Portfolio Value*** <br>
+27) ***Market Value*** <br>
+28) ***Portfolio Weight*** <br>
+29) ***P&L (Profit & Loss)*** <br>
+30) ***Gain/Loss in Dollars*** <br>
+31) ***Gain/Loss in Percentage*** <br>
+32) 
