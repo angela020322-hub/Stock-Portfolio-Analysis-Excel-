@@ -207,5 +207,4 @@ Provides an interactive security-level analysis tool that allows users to search
 # Formulas & Functions
 ## Formulas
 <img width="1112" height="572" alt="Screenshot (12)" src="https://github.com/user-attachments/assets/38c92cd8-3608-44f6-b385-65708379a329" />
-<br>
 ## Functions
