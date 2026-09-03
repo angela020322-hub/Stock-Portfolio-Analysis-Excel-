@@ -212,4 +212,28 @@ Provides an interactive security-level analysis tool that allows users to search
 <img width="1112" height="572" alt="Screenshot (12)" src="https://github.com/user-attachments/assets/38c92cd8-3608-44f6-b385-65708379a329" />
 
 ## Functions
+1. **IF** — Returns one value when a condition is TRUE and another value when it is FALSE.
+2. **IFERROR** — Returns a specified value when a formula results in an error.
+3. **FILTER** — Filters a range or array based on specified criteria.
+4. **UNIQUE** — Returns a list of unique values from a range or array.
+5. **XLOOKUP** — Searches for a value and returns the corresponding value from another range or array.
+6. **SUM** — Adds numbers together and returns their total.
+7. **SUMIF** — Adds values that meet a specified condition.
+8. **SUMPRODUCT** — Multiplies corresponding values in arrays and returns the sum of the resulting products.
+9. **MAX** — Returns the largest value in a range or array.
+10. **MIN** — Returns the smallest value in a range or array.
+11. **MAXIFS** — Returns the largest value that meets one or more specified criteria.
+12. **MINIFS** — Returns the smallest value that meets one or more specified criteria.
+13. **SORT** — Sorts the values in a range or array based on specified criteria.
+14. **GOOGLEFINANCE** — Retrieves financial market and security information from Google Finance.
+15. **LET** — Assigns names to intermediate calculations or values within a formula.
+16. **SCAN** — Performs a calculation sequentially across an array and returns each intermediate result.
+17. **LAMBDA** — Creates custom reusable functions using defined parameters and calculation logic.
+18. **MAP** — Applies a specified calculation to each value in an array.
+19. **SEQUENCE** — Generates a sequence of consecutive numbers in an array.
+20. **ROWS** — Returns the number of rows in a range or array.
+21. **INDEX** — Returns a value from a specified position within a range or array.
+22. **SPLIT** — Divides text into separate values based on a specified delimiter.
+23. **VALUE** — Converts text that represents a number into a numeric value.
+
 ## Function Logistics
