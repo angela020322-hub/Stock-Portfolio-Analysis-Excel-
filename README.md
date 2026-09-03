@@ -6,7 +6,7 @@
 5. [Project Results](#project-results)
 6. [Stakeholders & Potential Applications](#stakeholders--potential-applications)
 7. [Workbook Overview](#workbook-overview)
-8. [Vocabularies](#vocabularies)
+8. [Vocabulary](#vocabulary)
 
 # Stock Portfolio Analysis (Excel)
 Portfolio information may be distributed across transaction records, market prices, holdings, and company-level data, making it difficult to obtain a consistent view of portfolio performance and risk.
@@ -37,6 +37,8 @@ Screens securities based on selected criteria to support stock analysis and sele
 <img width="1366" height="504" alt="Screenshot (7)" src="https://github.com/user-attachments/assets/43e820ec-663c-4ee4-94c8-fb4eb28199f4" />
 ## Link to Excel Model
 [Stock_Analyst_Excel_Model.xlsx](https://github.com/user-attachments/files/31704987/Stock_Analyst_Excel_Model.xlsx)
+## Link to Project PDF
+
 # Stakeholders & Potential Applications
 The model is designed around different stakeholder information needs and can be adapted to portfolio monitoring, investment reporting, and financial analysis use cases.
 <img width="1294" height="579" alt="Screenshot (11)" src="https://github.com/user-attachments/assets/33030f4d-ab58-449d-bb69-45f6e6438b31" />
@@ -64,38 +66,138 @@ Provides an interactive security-level analysis tool that allows users to search
 9) **Real-Time Price Summary** — Displays the latest/reference market price and related information for the selected ticker.
 10) **Real-Time Price Chart** — Visualizes the selected ticker's market price information.
 11) **Real-Time Price Diagram** — Provides an additional visual representation of the selected security's current market price.
-# Vocabularies
+# Vocabulary
+## Transaction Vocabulary
 1) ***Ticker***<br>
 **Definition:** A unique symbol used to identify a publicly traded stock.<br>
 **Example from Project:** Used to identify and track the stock being transacted and to connect transaction, market-price, and stock-summary data.<br>
 2) ***Date***<br>
-3) ***Shares***<br>
-4) ***Unit Price*** <br>
-5) ***Total Cost*** <br>
-6) ***Buy*** <br>
-7) ***Sell*** <br>
-8) ***Sector*** <br>
-9) ***Industry*** <br>
-10) ***Information Technology*** <br>
-11) ***Communication Services*** <br>
-12) ***Financials*** <br>
-13) ***Consumer Discretionary***<br>
-14) ***Consumer Staples*** <br>
-15) ***Industrials*** <br>
-16) ***Energy*** <br>
-17) ***Utilities*** <br>
-18) ***Materials*** <br>
-19) ***Real Estate*** <br>
-20) ***Crypto*** <br>
-21) ***Running Cost Basis*** <br>
-22) ***Average Price*** <br>
-23) ***Total Invested*** <br>
-24) ***Current Price/Market Price*** <br>
-25) ***Current Value*** <br>
-26) ***Current Portfolio Value*** <br>
-27) ***Market Value*** <br>
-28) ***Portfolio Weight*** <br>
-29) ***P&L (Profit & Loss)*** <br>
-30) ***Gain/Loss in Dollars*** <br>
-31) ***Gain/Loss in Percentage*** <br>
-32) 
+**Definition:**
+**Example from Project:**
+4) ***Shares***<br>
+**Definition:**
+**Example from Project:**
+5) ***Unit Price*** <br>
+**Definition:**
+**Example from Project:**
+6) ***Total Cost*** <br>
+**Definition:**
+**Example from Project:**
+7) ***Buy*** <br>
+**Definition:**
+**Example from Project:**
+8) ***Sell*** <br>
+**Definition:**
+**Example from Project:**
+9) ***Transaction*** <br>
+**Definition:**
+**Example from Project:**
+## Portfolio Vocabulary
+1) ***Portfolio*** <br>
+**Definition:**
+**Example from Project:**
+2) ***Holding*** <br>
+**Definition:**
+**Example from Project:**
+3) ***Position*** <br>
+**Definition:**
+**Example from Project:**
+4) ***Total Invested*** <br>
+**Definition:**
+**Example from Project:**
+5) ***Current Value*** <br>
+**Definition:**
+**Example from Project:**
+6) ***Market Value*** <br>
+**Definition:**
+**Example from Project:**
+7) ***Portfolio Weight*** <br>
+**Definition:**
+**Example from Project:**
+8) ***Portfolio Allocation*** <br>
+**Definition:**
+**Example from Project:**
+## Performance & Risk Vocabulary
+1) ***P&L (Profit & Loss)*** <br>
+**Definition:**
+**Example from Project:**
+2) ***Gain/Loss in Dollars*** <br>
+**Definition:**
+**Example from Project:**
+3) ***Gain/Loss in Percentage*** <br>
+**Definition:**
+**Example from Project:**
+4) ***Realized P&L*** <br>
+**Definition:**
+**Example from Project:**
+5) ***Unrealized P&L*** <br>
+**Definition:**
+**Example from Project:**
+6) ***Return*** <br>
+**Definition:**
+**Example from Project:**
+7) ***ROC (Rate of Change)*** <br>
+**Definition:**
+**Example from Project:**
+8) ***Beta*** <br>
+**Definition:**
+**Example from Project:**
+## Market & Classification Vocabulary
+1) ***Sector*** <br>
+**Definition:**
+**Example from Project:**
+2) ***Industry*** <br>
+**Definition:**
+**Example from Project:**
+3) ***Current Price*** <br>
+**Definition:**
+**Example from Project:**
+4) ***52-Week High*** <br>
+**Definition:**
+**Example from Project:**
+5) ***52-Week Low*** <br>
+**Definition:**
+**Example from Project:**
+6) ***P/E Ratio*** <br>
+**Definition:**
+**Example from Project:**
+7) ***Benchmark*** <br>
+**Definition:**
+**Example from Project:**
+## Sector Definition
+1) ***Information Technology (IT)*** <br>
+**Definition:**
+**Example from Project:**
+2) ***Health Care*** <br>
+**Definition:**
+**Example from Project:**
+3) ***Financials*** <br>
+**Definition:**
+**Example from Project:**
+4) ***Consumer Discretionary*** <br>
+**Definition:**
+**Example from Project:**
+5) ***Consumer Staples*** <br>
+**Definition:**
+**Example from Project:**
+6) ***Communication Services*** <br>
+**Definition:**
+**Example from Project:**
+7) ***Industrials*** <br>
+**Definition:**
+**Example from Project:**
+8) ***Energy*** <br>
+**Definition:**
+**Example from Project:**
+9) ***Utilities*** <br>
+**Definition:**
+**Example from Project:**
+10) ***Materials*** <br>
+**Definition:**
+**Example from Project:**
+11) ***Real Estate*** <br>
+**Definition:**
+**Example from Project:**
+12) ***Crypto*** <br>
+**Definition:**
+**Example from Project:**
