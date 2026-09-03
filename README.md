@@ -23,6 +23,7 @@
 - [Formulas & Functions](#formulas--functions)
   - [Formulas](#formulas)
   - [Functions](#functions)
+  - [Function Logistics](#function-logistics)
 # Stock Portfolio Analysis (Excel)
 Portfolio information may be distributed across transaction records, market prices, holdings, and company-level data, making it difficult to obtain a consistent view of portfolio performance and risk.
 # Data Disclaimer
@@ -211,3 +212,4 @@ Provides an interactive security-level analysis tool that allows users to search
 <img width="1112" height="572" alt="Screenshot (12)" src="https://github.com/user-attachments/assets/38c92cd8-3608-44f6-b385-65708379a329" />
 
 ## Functions
+## Function Logistics
