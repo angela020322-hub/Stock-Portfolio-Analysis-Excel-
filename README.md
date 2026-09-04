@@ -293,17 +293,17 @@ LET(
 sector,L26,
 tickers,UNIQUE(
 FILTER(
-'Transection History'!B$2:B998,
-'Transection History'!F$2:F998=sector,
-'Transection History'!B$2:B998<>""
+'Transection History'!B$2:B,
+'Transection History'!F$2:F=sector,
+'Transection History'!B$2:B<>""
 )
 ),
 tickerCosts,MAP(
 tickers,
 LAMBDA(ticker,
 LET(
-shares,FILTER('Transection History'!C$2:C998,'Transection History'!B$2:B998=ticker),
-costs,FILTER('Transection History'!E$2:E998,'Transection History'!B$2:B998=ticker),
+shares,FILTER('Transection History'!C$2:C998,'Transection History'!B$2:B=ticker),
+costs,FILTER('Transection History'!E$2:E998,'Transection History'!B$2:B=ticker),
 n,ROWS(shares),
 idx,SEQUENCE(n),
 runningShares,SCAN(0,idx,LAMBDA(acc,i,acc+INDEX(shares,i))),
@@ -338,7 +338,7 @@ SUM(tickerCosts)
 
 ### Function 04: Real Time Value
 ```
-=IFERROR(SUMPRODUCT(('Real Time Market Price'!$G$2:$G998=L26)*('Real Time Market Price'!$C$2:$C998)*('Real Time Market Price'!$B$2:$B998)),0)
+=IFERROR(SUMPRODUCT(('Real Time Market Price'!$G$2:$G998=L26)*('Real Time Market Price'!$C$2:$C998)*('Real Time Market Price'!$B$2:$B)),0)
 ```
 **Purpose**
 <br>
@@ -350,7 +350,7 @@ SUM(tickerCosts)
 =SORT(
   FILTER(
     'Transection History'!A2:G1000,
-    'Transection History'!B2:B1000=$B$1
+    'Transection History'!B2:B=$B$1
   ),
   1,
   True
