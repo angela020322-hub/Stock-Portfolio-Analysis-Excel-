@@ -54,6 +54,7 @@ Screens securities based on selected criteria to support stock analysis and sele
 ## Link to Excel Model
 [Stock Analyst Excel Model.xlsx](https://github.com/user-attachments/files/31810486/Stock.Analyst.Excel.Model.xlsx)
 ## Link to Project PDF
+[Stock_Analysis_Excel_Latex.pdf](https://github.com/user-attachments/files/31850083/Stock_Analysis_Excel_Latex.pdf)
 
 # Stakeholders & Potential Applications
 The model is designed around different stakeholder information needs and can be adapted to portfolio monitoring, investment reporting, and financial analysis use cases.
