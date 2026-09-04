@@ -239,9 +239,125 @@ Provides an interactive security-level analysis tool that allows users to search
 23. **SUMIF** — Adds values that meet a specified condition.
 24. **MAXIFS** — Returns the largest value that meets one or more specified criteria.
 ## Function Logistics
-### Function 01
+### Function 01: Running Cost Basis
+```
+=IF(B2="","",
+LET(
+t,B2,
+shares,FILTER($C$2:C2,$B$2:B2=t),
+prices,FILTER($D$2:D2,$B$2:B2=t),
+states,SCAN("0|0",SEQUENCE(ROWS(shares)),
+LAMBDA(acc,i,
+LET(
+x,SPLIT(acc,"|"),
+oldShares,VALUE(INDEX(x,1,1)),
+oldBasis,VALUE(INDEX(x,1,2)),
+s,INDEX(shares,i),
+p,INDEX(prices,i),
+newShares,oldShares+s,
+newBasis,
+IF(
+s>0,
+oldBasis+s*p,
+IF(
+newShares<=0,
+0,
+oldBasis+s*(oldBasis/oldShares)
+)
+),
+newShares&"|"&newBasis
+))),
+last,SPLIT(INDEX(states,ROWS(states)),"|"),
+VALUE(INDEX(last,1,2))
+))
+```
+**Purpose**
+<br>
+**Logic**
+<br>
 
-> thus is me
+### Function 02: Total Invested
+```
+=SUM(MAP(UNIQUE(FILTER('Transection History'!B2:B,'Transection History'!B2:B<>"")),LAMBDA(t,INDEX(FILTER('Transection History'!G2:G,'Transection History'!B2:B=t),ROWS(FILTER('Transection History'!G2:G,'Transection History'!B2:B=t))))))
+```
 
 **Purpose**
+<br>
 **Logic**
+<br>
+
+### Function 03: Amount Invested
+```
+=IFERROR(
+LET(
+sector,L26,
+tickers,UNIQUE(
+FILTER(
+'Transection History'!B$2:B998,
+'Transection History'!F$2:F998=sector,
+'Transection History'!B$2:B998<>""
+)
+),
+tickerCosts,MAP(
+tickers,
+LAMBDA(ticker,
+LET(
+shares,FILTER('Transection History'!C$2:C998,'Transection History'!B$2:B998=ticker),
+costs,FILTER('Transection History'!E$2:E998,'Transection History'!B$2:B998=ticker),
+n,ROWS(shares),
+idx,SEQUENCE(n),
+runningShares,SCAN(0,idx,LAMBDA(acc,i,acc+INDEX(shares,i))),
+runningCost,SCAN(0,idx,LAMBDA(acc,i,
+LET(
+prevShares,IF(i=1,0,INDEX(runningShares,i-1)),
+q,INDEX(shares,i),
+cost,INDEX(costs,i),
+IF(
+q>0,
+acc+cost,
+IF(
+prevShares=0,
+0,
+acc+q*(acc/prevShares)
+)
+)
+))),
+INDEX(runningCost,n)
+)
+)
+),
+SUM(tickerCosts)
+),
+0)
+```
+
+**Purpose**
+<br>
+**Logic**
+<br>
+
+### Function 04: Real Time Value
+```
+=IFERROR(SUMPRODUCT(('Real Time Market Price'!$G$2:$G998=L26)*('Real Time Market Price'!$C$2:$C998)*('Real Time Market Price'!$B$2:$B998)),0)
+```
+**Purpose**
+<br>
+**Logic**
+<br>
+
+### Function 05: Purchase History Tracker
+```
+=SORT(
+  FILTER(
+    'Transection History'!A2:G1000,
+    'Transection History'!B2:B1000=$B$1
+  ),
+  1,
+  True
+)
+```
+**Purpose**
+<br>
+**Logic**
+<br>
+
