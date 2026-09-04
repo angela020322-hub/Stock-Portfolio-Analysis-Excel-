@@ -411,6 +411,7 @@ Retrieves the last Running Cost Basis for each ticker. <br>
 Adds the final Cost Basis of all tickers in the selected sector. <br>
 13) Handle calculation errors — IFERROR <br>
 Returns 0 if the calculation produces an error. <br>
+
 **In Short** <br>
 - LET → identify Sector <br>
 - FILTER / UNIQUE → identify Sector's unique Tickers <br>
