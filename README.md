@@ -475,11 +475,25 @@ Returns 0 if the calculation produces an error. <br>
   True
 )
 ```
+
 **Purpose** <br>
 
-<br>
+Displays the complete purchase and transaction history for the selected stock ticker, sorted chronologically by transaction date. <br>
 
 **Logic** <br>
 
-<br>
+1) Identify the selected Ticker — $B$1 <br>
+Uses the ticker selected in cell B1 as the filter criteria. <br>
+3) Filter transactions by Ticker — FILTER <br>
+Retrieves all transaction records from columns A:G where the Ticker matches $B$1. <br>
+3) Sort transactions by Date — SORT <br>
+Sorts the filtered transaction records based on the first column, which contains the transaction date. <br>
+4) Sort in ascending order — TRUE <br>
+Arranges transactions from the earliest date to the latest date. <br>
 
+**In Short** <br>
+
+- $B$1 → identify selected Ticker <br>
+- FILTER → retrieve matching transaction history <br>
+- SORT → organize transactions chronologically <br>
+- TRUE → sort from earliest to latest <br>
