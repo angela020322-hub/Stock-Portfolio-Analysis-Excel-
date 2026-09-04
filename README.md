@@ -272,7 +272,9 @@ VALUE(INDEX(last,1,2))
 ))
 ```
 **Purpose** <br>
+
 Calculate the running total cost basis for each stock ticker by tracking purchases and sales sequentially. <br>
+
 **Logic**
 1) Identify the current Ticker — LET <br>
 Stores the ticker from B2 as variable t.
@@ -318,7 +320,9 @@ Retrieves the final running state and returns the latest Cost Basis.
 ```
 
 **Purpose** <br>
+
 Calculates the total invested amount by summing the latest total cost for each unique stock ticker. <br>
+
 **Logic** <br>
 1) Identify unique Tickers — FILTER + UNIQUE <br>
 Retrieves all non-blank tickers and creates a unique list. <br>
@@ -383,7 +387,9 @@ SUM(tickerCosts)
 0)
 ```
 **Purpose** <br>
+
 Calculates the total amount of invested for a selected sector by determine the remaining cost basis of each stock in that sector and summing them. <br>
+
 **Logic** <br>
 1) Identify the selected Sector — LET <br>
 Stores the sector from L26 as sector. <br>
