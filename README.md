@@ -402,7 +402,7 @@ Retrieves its Shares and transaction Costs. <br>
 5) Create transaction sequence — ROWS + SEQUENCE <br>
 Determines the number and order of transactions. <br>
 6) Calculate Running Shares — SCAN + LAMBDA + INDEX
-Sequentially adds each transaction's Shares to determine the remaining Shares Owned.v
+Sequentially adds each transaction's Shares to determine the remaining Shares Owned.
 7) Calculate Running Cost Basis — SCAN + LAMBDA + IF + INDEX <br>
 Sequentially updates Cost Basis based on each Buy or Sell transaction. <br>
 8) Handle Buy transactions — IF + + <br>
@@ -434,10 +434,35 @@ Returns 0 if the calculation produces an error. <br>
 ```
 =IFERROR(SUMPRODUCT(('Real Time Market Price'!$G$2:$G998=L26)*('Real Time Market Price'!$C$2:$C998)*('Real Time Market Price'!$B$2:$B)),0)
 ```
-**Purpose**
+
+**Purpose** <br>
+
+Calculates the current market value of all stocks within the selected sector using real-time market prices and current holdings. <br>
 <br>
-**Logic**
-<br>
+
+**Logic** <br>
+
+1) Identify the selected Sector — L26 <br>
+Uses the sector listed in L26 as the filtering criterion. <br>
+2) Filter stocks by Sector — = <br>
+Checks whether each stock's sector matches the selected sector. <br>
+3) Retrieve Current Price — C <br>
+Uses the current market price for each matching stock. <br>
+4) Retrieve Shares Owned — B <br>
+Uses the current shares held for each matching stock. <br>
+5) Calculate each Stock's Current Value — * <br>
+Multiplies Current Price × Shares Owned. <br>
+6) Calculate Sector Real Time Value — SUMPRODUCT <br>
+Sums the Current Value of all stocks belonging to the selected sector. <br>
+7) Handle calculation errors — IFERROR <br>
+Returns 0 if the calculation produces an error. <br>
+
+**In Short** <br>
+
+- = → identify stocks in the selected sector <br>
+- C × B → calculate each stock's current value <br>
+- SUMPRODUCT → total the sector's real-time value <br>
+- IFERROR → return 0 if an error occurs <br>
 
 ### Function 05: Purchase History Tracker
 ```
@@ -450,8 +475,11 @@ Returns 0 if the calculation produces an error. <br>
   True
 )
 ```
-**Purpose**
+**Purpose** <br>
+
 <br>
-**Logic**
+
+**Logic** <br>
+
 <br>
 
