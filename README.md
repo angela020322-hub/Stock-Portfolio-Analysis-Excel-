@@ -271,22 +271,74 @@ last,SPLIT(INDEX(states,ROWS(states)),"|"),
 VALUE(INDEX(last,1,2))
 ))
 ```
-**Purpose**
-<br>
+**Purpose** <br>
+Calculate the running total cost basis for each stock ticker by tracking purchases and sales sequentially. <br>
 **Logic**
-<br>
+1) Identify the current Ticker — LET <br>
+Stores the ticker from B2 as variable t.
+2) Retrieve transactions for the Ticker — FILTER <br>
+Extracts the relevant Shares and Unit Price records for the current ticker.
+3) Create transaction sequence — ROWS + SEQUENCE <br>
+Counts the filtered transactions and generates a sequential index for each one.
+4) Process transactions sequentially — SCAN + LAMBDA <br>
+Calculates the running Shares and Cost Basis while carrying the previous result forward.
+5) Retrieve previous Shares and Cost Basis — SPLIT + INDEX + VALUE <br>
+Separates the previous running values and converts them into numbers.
+6) Retrieve current Shares and Unit Price — INDEX <br>
+Gets the Shares and Price for the current transaction.
+7) Calculate new Shares — + <br>
+Adds the current transaction Shares to the previous Shares.
+8) Handle Buy vs. Sell — IF <br>
+Determines whether to add purchase cost or reduce Cost Basis.
+9) Calculate Buy Cost Basis — + + * <br>
+Adds Shares × Unit Price to the previous Cost Basis.
+10) Calculate Sell Cost Basis — / + * + + <br>
+Uses the current average cost per share to reduce the Cost Basis.
+11) Reset fully sold positions — IF <br>
+Sets Cost Basis to 0 when remaining Shares are ≤ 0.
+12) Store the running result — & <br>
+Combines Shares and Cost Basis into one value for the next SCAN iteration.
+13) Return the latest Cost Basis — INDEX + SPLIT + VALUE <br>
+Retrieves the final running state and returns the latest Cost Basis.
+
+**In Short** <br>
+- LET → identify & organize variables
+- FILTER → retrieve ticker transactions
+- ROWS / SEQUENCE → create transaction sequence
+- SCAN / LAMBDA → process transactions sequentially
+- SPLIT / INDEX / VALUE → retrieve running values
+- IF → handle Buy / Sell / fully sold
+- SUMMATION / MULTIPLICATION / DIVISION → calculate Shares & Cost Basis
+- & → carry the running state
+- INDEX / SPLIT / VALUE → return final Cost Basis <br>
 
 ### Function 02: Total Invested
 ```
 =SUM(MAP(UNIQUE(FILTER('Transection History'!B2:B,'Transection History'!B2:B<>"")),LAMBDA(t,INDEX(FILTER('Transection History'!G2:G,'Transection History'!B2:B=t),ROWS(FILTER('Transection History'!G2:G,'Transection History'!B2:B=t))))))
 ```
 
-**Purpose**
-<br>
-**Logic**
-<br>
+**Purpose** <br>
+Calculates the total invested amount by summing the latest total cost for each unique stock ticker. <br>
+**Logic** <br>
+1) Identify unique Tickers — FILTER + UNIQUE <br>
+Retrieves all non-blank tickers and creates a unique list. <br>
+2) Process each Ticker — MAP + LAMBDA <br>
+Iterates through each unique ticker individually. <br>
+3) Retrieve all Total Cost values — FILTER <br>
+Filters the Total Cost column (G) for the current ticker. <br>
+4) Identify the latest transaction — ROWS + INDEX <br>
+Uses the number of filtered transactions to retrieve the last Total Cost value.
+5) Sum the latest value for each Ticker — SUM <br>
+Adds the latest Total Cost from every unique ticker to calculate Total Invested. <br>
 
-### Function 03: Amount Invested
+**In Short** <br>
+- FILTER / UNIQUE → identify unique tickers <br>
+- MAP / LAMBDA → process each ticker <br>
+- FILTER → retrieve its transaction costs <br>
+- ROWS / INDEX → get the latest Total Cost <br>
+- SUM → calculate Total Invested <br>
+
+### Function 03: Amount Invested <br>
 ```
 =IFERROR(
 LET(
@@ -330,11 +382,46 @@ SUM(tickerCosts)
 ),
 0)
 ```
-
-**Purpose**
-<br>
-**Logic**
-<br>
+**Purpose** <br>
+Calculates the total amount of invested for a selected sector by determine the remaining cost basis of each stock in that sector and summing them. <br>
+**Logic** <br>
+1) Identify the selected Sector — LET <br>
+Stores the sector from L26 as sector. <br>
+2) Identify unique Tickers within the Sector — FILTER + UNIQUE <br>
+Filters the Transaction History by sector and removes blank tickers and duplicates. <br>
+3) Process each Ticker separately — MAP + LAMBDA <br>
+Calculates the invested amount for each stock in the sector. <br>
+4) Retrieve each Ticker's transactions — FILTER <br>
+Retrieves its Shares and transaction Costs. <br>
+5) Create transaction sequence — ROWS + SEQUENCE <br>
+Determines the number and order of transactions. <br>
+6) Calculate Running Shares — SCAN + LAMBDA + INDEX
+Sequentially adds each transaction's Shares to determine the remaining Shares Owned.v
+7) Calculate Running Cost Basis — SCAN + LAMBDA + IF + INDEX <br>
+Sequentially updates Cost Basis based on each Buy or Sell transaction. <br>
+8) Handle Buy transactions — IF + + <br>
+Adds the transaction Cost to the previous Cost Basis. <br>
+9) Handle Sell transactions — IF + / + * + + <br>
+Reduces Cost Basis using the current average cost per share. <br>
+10) Handle fully sold positions — IF <br>
+Sets Cost Basis to 0 when the previous Shares Owned are 0. <br>
+11) Return each Ticker's final Cost Basis — INDEX <br>
+Retrieves the last Running Cost Basis for each ticker. <br>
+12) Calculate Sector Amount Invested — SUM <br>
+Adds the final Cost Basis of all tickers in the selected sector. <br>
+13) Handle calculation errors — IFERROR <br>
+Returns 0 if the calculation produces an error. <br>
+**In Short** <br>
+- LET → identify Sector <br>
+- FILTER / UNIQUE → identify Sector's unique Tickers <br>
+- MAP / LAMBDA → calculate each Ticker <br>
+- FILTER → retrieve transactions <br>
+- ROWS / SEQUENCE → create transaction sequence <br>
+- SCAN / LAMBDA → calculate Running Shares & Cost Basis <br>
+- IF → handle Buy / Sell / fully sold positions <br>
+- INDEX → retrieve transaction & final values <br>
+- SUM → calculate total Amount Invested <br>
+- IFERROR → return 0 if an error occurs <br>
 
 ### Function 04: Real Time Value
 ```
